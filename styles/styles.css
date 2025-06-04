@@ -1,0 +1,173 @@
+/* basis einstellungen für alle elemente */
+* {
+    box-sizing: border-box; /* padding + border */
+}
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: white;
+}
+header {
+    background-color: #5e9160;
+}
+/* logo der seite */
+.logo-container {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.logo-container img {
+    max-width: 230px;
+}
+/* navigationsleiste */
+nav {
+    background-color: #5e9160;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav li {
+    margin-right: 15px;
+}
+/* links design */
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+}
+nav a:hover,
+nav a.active {
+    background-color: #49734e;
+    color: white;
+    border-radius: 4px;
+}
+/* content-boxen 600px, 800px */
+.content-box-max {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.content-box {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/* überschrift */
+.content-box h1 {
+    color: #373737;
+    font-size: 2rem;
+}
+/* text im content-box vereich */
+.content-box p {
+    font-size: 1rem;
+    color: #474747;
+}
+
+/* gruppierung in form */
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+legend {
+    font-weight: bold;
+    color: #5e9160;
+    margin-bottom: 10px;
+}
+label {
+    display: block;
+    margin: 10px 0;
+}
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* elemente verbergen (für abholdetails / erfolgreich anzeige) */
+.hidden {
+    display: none;
+}
+/* input fehler anzeige rot umrandet */
+input.error {
+    border: 2px solid red;
+}
+/* fehlermeldung schrift */
+.error-message {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+/* pf info */
+.text-hint {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.required {
+    color: red;
+    margin-right: 4px;
+}
+
+/* blaue info-box */
+.info-text {
+    background-color: #d1e5f7;
+    border-left: 4px solid #2090ec;
+    padding: 12px 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+
+
+
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: #5e9160;
+    color: white;
+    margin-top: 30px;
+    line-height: 2.6;
+}
+/* Links im Footer */
+footer a {
+    color: white;
+}
+footer a:hover {
+    text-decoration: None;
+    color: rgb(218, 218, 218);
+}
+
+/* registrations box nach erfolg */
+#confirmation {
+    background-color: #dff0d8;
+    border: 1px solid #3c763d;
+    color: #3c763d;
+    padding: 15px 20px;
+    margin: 30px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* responsive navigation */
+/* sorgt dafür dass an mobiles mit kleinem bildschirm die flex elemente untereinander sind */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}

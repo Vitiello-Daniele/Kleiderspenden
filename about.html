@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <!-- Sprache der Seite auf Deutsch setzen -->
 <html lang="de">
+
 <!-- Enthält Metadaten und Verweise für die Seite -->
 <head>
     <!-- Zeichensatz -->
@@ -21,48 +22,48 @@
     <!-- Bootstrap CSS einbinden -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Stylesheet für das Design der Seite -->
-    <link href="styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <!-- Der sichtbare Teil der Webseite -->
 <body>
+
     <!-- Headerbereich der Seite mit Logo und Navigationsleiste -->
     <header>
+
         <!-- Container für das Logo -->
         <div class="logo-container">
             <!-- Logo-Bild, wichtig: alt-Text für Barrierefreiheit -->
             <img src="images/logo.png" alt="Kleiderspenden Logo">
         </div>
-        <!-- Navigationsleiste mit Links zu anderen Seiten -->
+
+        <!-- Navigation (Menüleiste) mit Links zu anderen Seiten -->
         <nav>
             <ul>
                 <!-- Aktive Seite wird mit "active" markiert (anderer Style in css) -->
-                <li><a href="index.html" class="active">Startseite</a></li>
+                <li><a href="index.html">Startseite</a></li>
                 <li><a href="register.html">Registrierung</a></li>
-                <li><a href="about.html">Über uns</a></li>
+                <li><a href="about.html" class="active">Über uns</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
+
     <!-- Hauptbereich der Seite -->
     <main>
-        <!-- Willkommensinformationstext -->
+
+        <!-- Infotext (content-box) -->
         <section class="content-box">
-            <!-- Überschrift -->
-            <h1>Willkommen bei unserem Kleiderspenden-Portal</h1>
-            <!-- Beschreibungstexte -->
-            <p>Hier können Sie Ihre Kleiderspende registrieren und selbst entscheiden, in welches aktuelle Krisengebiet Ihre Hilfe gesendet wird.</p>
-            <p>Ihre Spende zählt! Gemeinsam unterstützen wir Menschen in Not.</p>
-            <!-- Hinweistext für Abholservice, nur PLZ 74*** -->
-            <p class="info-text">
-                <strong>Hinweis:</strong> Unser Abholservice ist nur für Adressen mit Postleitzahlen beginnend mit <strong>74</strong> verfügbar.
-            </p>
-            <!-- Call-to-Action Button mit weiterleitung auf die Registrationsseite, BT class btn btn-success -->
-            <a href="register.html" class="btn btn-success">Jetzt spenden</a>
+            <h1>Über uns</h1>
+            <p>Wir sind ein engagierter gemeinnütziger Verein, der es sich zur Aufgabe gemacht hat, Kleiderspenden für Menschen in Not zu sammeln und zu verteilen. Gemeinsam wollen wir einen Beitrag für eine bessere Welt leisten.</p>
+            <p>Mit unserem Kleiderspenden-Portal ermöglichen wir es, Spenden gezielt in aktuelle Krisengebiete zu senden. Vielen Dank für Ihre Unterstützung!</p>
         </section>
     </main>
+
     <!-- Footer der Website mit den rechtlichen Hinweisen -->
     <footer>
         <p>&copy; 2025 Kleiderspenden e.V. | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
     </footer>
+
 </body>
 </html>
